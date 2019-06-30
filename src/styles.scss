@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./styles/global/animations";
+@import "./styles/global/variables";
+@import "./styles/global/mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  color: $color-white;
+  font-family: sans-serif !important;
+}
+body {
+  position: relative;
+  @include animatedBackground;
+  height: 100vh;
+  overflow: visible;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 100;
+}

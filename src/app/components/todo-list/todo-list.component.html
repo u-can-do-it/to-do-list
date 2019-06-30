@@ -1,0 +1,9 @@
+<div class="list-wrapper">
+  <ul class="list">
+    <li class="list__item" *ngFor="let task of todoService.getTasks()">
+      <p class="pargraph">
+        {{ task.text }}
+      </p>
+    </li>
+  </ul>
+</div>

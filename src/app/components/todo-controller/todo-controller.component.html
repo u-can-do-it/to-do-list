@@ -1,0 +1,19 @@
+<div class="todo-controller">
+  <input
+    class="todo-controller__input"
+    type="text"
+    [(ngModel)]="taskText"
+    placeholder="Add a new task"
+    name="task"
+    (keydown)="onKeydown($event)"
+  />
+  <div class="todo-controller__btns">
+    <button class="btn todo-controller-add" (click)="addTask()">Add</button>
+    <button class="btn todo-controller-remove" (click)="removeTask()">
+      Remove
+    </button>
+    <button class="btn todo-controller-clear" (click)="clearTasks()">
+      Clear
+    </button>
+  </div>
+</div>

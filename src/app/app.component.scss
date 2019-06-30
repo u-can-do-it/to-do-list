@@ -1,0 +1,28 @@
+@import "../styles/global/mixins";
+@import "../styles/global/variables";
+
+.app {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 0 20px;
+  background-color: $color-primary;
+  border-radius: 5px;
+  min-width: 320px;
+  min-height: 50%;
+  animation: appear 1s forwards;
+  @include shadow;
+
+  @include respond(phone) {
+    top: unset;
+    left: unset;
+    transform: none;
+    min-width: unset;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border-radius: unset;
+    overflow: auto;
+  }
+}

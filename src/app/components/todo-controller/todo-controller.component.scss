@@ -1,0 +1,63 @@
+@import "../../../styles/global/mixins";
+@import "../../../styles/global/variables";
+
+.todo-controller {
+  @include respond(phone) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100vw;
+    z-index: 2;
+  }
+
+  &__input {
+    display: block;
+    margin: 0 auto;
+    background-color: $color-dark;
+    border: 1px solid $color-border;
+    width: 80%;
+    height: 20px;
+    color: $color-font-dark;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+    padding-left: 8px;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $color-royal-blue;
+    }
+  }
+  &__btns {
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.btn,
+.btn:visited {
+  border-radius: 6px;
+  position: relative;
+  background-color: $color-dark;
+  border: none;
+  margin: 4px;
+  font-size: 16px;
+  color: $color-font-dark;
+  padding: 8px;
+  text-align: center;
+  transition: all 0.1s;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 5px #25282b;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 4px #25282b;
+}
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}

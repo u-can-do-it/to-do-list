@@ -1,0 +1,35 @@
+@import "../../../styles/global/animations";
+@import "../../../styles/global/variables";
+@import "../../../styles/global/mixins";
+
+.list {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 0.2s;
+  list-style-type: none;
+  padding: 0 20px 20px;
+
+  @include respond(phone) {
+    height: 68vh;
+    overflow: auto;
+  }
+
+  &__item {
+    opacity: 0;
+    animation: appear 1s forwards;
+    padding: 10px 0 10px 10px;
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 1px;
+        background-color: $color-border;
+      }
+    }
+  }
+}

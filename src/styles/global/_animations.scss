@@ -1,0 +1,27 @@
+@keyframes bckGradient {
+  0% {
+    background-position: 0% 17%;
+  }
+  50% {
+    background-position: 100% 84%;
+  }
+  100% {
+    background-position: 0% 17%;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zza {
+  0% {
+    transform: translateY(90deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
