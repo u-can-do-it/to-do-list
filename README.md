@@ -1,5 +1,10 @@
 # Todolist
 
+[Preview](https://u-can-do-it.github.io/to-do-list/)
+
+
+![app social preview](https://repository-images.githubusercontent.com/194533675/7ac7c400-9b72-11e9-9c9c-d5d800d556f3)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.5.
 
 ## Development server
